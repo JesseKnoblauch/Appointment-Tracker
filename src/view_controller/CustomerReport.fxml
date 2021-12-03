@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_controller.CustomerReportController">
+   <children>
+      <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="500.0" prefWidth="1000.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="700.0">
+               <children>
+                  <ComboBox fx:id="contactComboBox" onAction="#onActionComboBox" prefWidth="150.0" promptText="Filter By Contact">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></ComboBox>
+                  <Label text="Customer Report" underline="true">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="appointmentTable" prefHeight="350.0" prefWidth="820.0">
+              <columns>
+                <TableColumn fx:id="appointmentIdCol" prefWidth="50.0" text="ID" />
+                  <TableColumn fx:id="customerIdCol" prefWidth="65.0" text="Cust. ID" />
+                  <TableColumn fx:id="contactCol" prefWidth="120.0" text="Contact" />
+                  <TableColumn fx:id="titleCol" prefWidth="105.0" text="Title" />
+                  <TableColumn fx:id="typeCol" prefWidth="115.0" text="Type" />
+                  <TableColumn fx:id="descriptionCol" prefWidth="140.0" text="Description" />
+                  <TableColumn fx:id="startCol" prefWidth="120.0" text="Start" />
+                  <TableColumn fx:id="endCol" prefWidth="100.0" text="End" />
+              </columns>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="120.0" prefWidth="1200.0" spacing="200.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="400.0" spacing="40.0" />
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#onActionBack" prefHeight="40.0" prefWidth="100.0" text="Back" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

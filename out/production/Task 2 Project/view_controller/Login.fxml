@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_controller.LoginController">
+   <children>
+      <Label fx:id="loginLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="304.0" layoutY="45.0" prefHeight="49.0" prefWidth="195.0" text="Login Screen" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="201.0" layoutY="187.0" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: black; -fx-border-radius: 15; -fx-border-insets: -30;">
+         <children>
+            <TextField fx:id="usernameField" promptText="Username">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="passwordField" promptText="Password">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+               <children>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onActionLogin" prefHeight="45.0" prefWidth="110.0" text="Login">
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="exitButton" mnemonicParsing="false" onAction="#onActionExit" prefHeight="45.0" prefWidth="110.0" text="Exit">
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="zoneLabel" alignment="CENTER" layoutX="146.0" layoutY="94.0" prefHeight="37.0" prefWidth="509.0" text="Time Zone" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
