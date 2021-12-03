@@ -1,3 +1,16 @@
+** DEFAULT LOGIN CREDENTIALS **
+
+-USER ONE
+username: admin
+password: admin
+
+-USER TWO
+username: test
+password: test
+
+
+** SCHOOL INFO **
+
 Scheduling Application
 A GUI-based scheduling desktop application for a global consulting organization that conducts business in multiple languages.
 
